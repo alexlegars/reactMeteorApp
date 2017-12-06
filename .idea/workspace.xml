@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b49da3d5-9502-424c-ac07-9871faa82243" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/config.scss" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.scss" />
@@ -12,6 +13,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/App.js" afterPath="$PROJECT_DIR$/imports/ui/App.js" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/ClassesList.js" afterPath="$PROJECT_DIR$/imports/ui/components/ClassesList.js" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,6 +39,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="69">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
@@ -46,6 +52,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
+            <state relative-caret-position="168">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -53,6 +63,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/App.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,6 +72,14 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+              <folding />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
             </state>
           </provider>
         </entry>
@@ -78,13 +97,22 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="23">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
+=======
+            <state relative-caret-position="1566">
+              <caret line="99" column="33" lean-forward="true" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="config.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/config.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,27 +128,53 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="App.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/App.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ClassesList.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/ClassesList.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+=======
+      <file leaf-file-name="ClassesList.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/ClassesList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
             </state>
           </provider>
         </entry>
@@ -142,7 +196,14 @@
       <find>tasks</find>
       <find>renderTas</find>
       <find>console.log</find>
+      <find>.find</find>
+      <find>Students</find>
+      <find>Exercice</find>
+      <find>Exercices</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Exercice</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/imports</dir>
       <dir>$PROJECT_DIR$</dir>
@@ -163,8 +224,8 @@
         <option value="$PROJECT_DIR$/imports/api/tasks.js" />
         <option value="$PROJECT_DIR$/imports/api/students.js" />
         <option value="$PROJECT_DIR$/imports/api/classes.js" />
-        <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/../../PS/composants.md" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/imports/ui/components/ClassesList.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scss-config.json" />
@@ -173,6 +234,15 @@
         <option value="$PROJECT_DIR$/imports/ui/styles.scss" />
         <option value="$PROJECT_DIR$/client/config.scss" />
         <option value="$PROJECT_DIR$/imports/ui/App.scss" />
+=======
+        <option value="$PROJECT_DIR$/imports/api/notes.js" />
+        <option value="$PROJECT_DIR$/imports/api/exercice.js" />
+        <option value="$PROJECT_DIR$/server/main.js" />
+        <option value="$PROJECT_DIR$/imports/api/exercices.js" />
+        <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/imports/ui/App.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/ClassesList.js" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
       </list>
     </option>
   </component>
@@ -250,6 +320,33 @@
               <item name="testmeteor" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-meteor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-meteor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="react-meteor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-meteor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="imports" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="react-meteor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-meteor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="imports" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="react-meteor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-meteor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="imports" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ui" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="react-meteor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-meteor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,12 +395,16 @@
       <updated>1512397234391</updated>
       <workItem from="1512397235781" duration="8403000" />
       <workItem from="1512479408462" duration="11374000" />
-      <workItem from="1512492620293" duration="4210000" />
+      <workItem from="1512492620293" duration="9888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="25828000" />
+=======
+    <option name="totallyTimeSpent" value="29665000" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
@@ -312,7 +413,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22762509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -331,9 +438,12 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30264673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33821735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -473,9 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -549,9 +657,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -568,6 +674,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -599,6 +706,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3831">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -610,6 +718,8 @@
     <entry file="file://$PROJECT_DIR$/imports/api/tasks.js" />
     <entry file="file://$PROJECT_DIR$/imports/ui/task.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
+=======
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -626,24 +736,53 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/imports/api/classes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="55" lean-forward="false" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+=======
+    <entry file="file://$PROJECT_DIR$/../../bestpractice.md" />
+    <entry file="file://$PROJECT_DIR$/imports/api/tasks.js" />
+    <entry file="file://$PROJECT_DIR$/imports/ui/task.js" />
+    <entry file="file://$PROJECT_DIR$/imports/api/students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/imports/api/students.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+=======
+    <entry file="file://$PROJECT_DIR$/../../PS/composants.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/notes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="287">
           <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
@@ -654,16 +793,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/imports/api/exercices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/classes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/exercices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
           <folding />
         </state>
       </provider>
@@ -676,6 +850,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/imports/ui/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -683,11 +858,27 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/server/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="23">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
@@ -731,6 +922,23 @@
         <state relative-caret-position="92">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="1566">
+          <caret line="99" column="33" lean-forward="true" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/ClassesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+>>>>>>> c38a7dc8005d5edb8e2758c09f80d765722a548e
         </state>
       </provider>
     </entry>

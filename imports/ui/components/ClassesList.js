@@ -1,5 +1,7 @@
 import {Classes} from "../../api/classes.js";
 import {Students} from "../../api/students.js";
+import {Exercices} from "../../api/exercices.js";
+import {Notes} from "../../api/notes.js";
 import React, { Component } from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
 
@@ -17,13 +19,16 @@ class ClassesList extends Component {
           <tr>
             <th>Étudiant</th>
             {
-              entry.exercices &&
-              entry.exercices.map((exercice, exKey) => {
+              this.props.exercices &&
+              this.props.exercices.map((exercice, exKey) => {
+                if(exercice.classe == entry._id){
                   return (
-                    <th key={exKey}>{exercice.name} ({exercice.coefficient})</th>
+                  <th key={exKey}>{exercice.name} ({exercice.coefficient})</th>
                   )
+               }
                 })
             }
+            <th>Moyenne</th>
           </tr>
           {
             this.props.students.map((student, studentKey) => {
@@ -31,24 +36,29 @@ class ClassesList extends Component {
                 (<tr key={studentKey}>
                   <td>{student.firstName} {student.lastName}</td>
                   {
-                    entry.exercices &&
-                      entry.exercices.map((exercice, exKey) => {
+                    this.props.exercices &&
+                    this.props.exercices.map((exercice, exKey) => {
+                      if(exercice.classe == entry._id){
                         return (
                           <td key={exKey}>
                             {
-                              student.exercices &&
-                                student.exercices.map((studentEx, studentExKey) => {
-                                  if(studentEx.name === exercice.name){
-                                    return (
-                                      <span key={studentExKey}>{studentEx.note}</span>
-                                    )
-                                  }
-                                })
+                              this.props.notes &&
+                              this.props.notes.map((note, noteKey) => {
+                                if(note.exercice == exercice._id && note.student == student._id){
+                                  return (<span key={noteKey}>{note.note}</span>)
+                                }
+                              })
                             }
                           </td>
                         )
+                      }
                       })
                   }
+
+                  {
+                    this.getStudentMoyenne(student)
+                  }
+
                 </tr>)
                 : null);
             })
@@ -59,6 +69,26 @@ class ClassesList extends Component {
       ))
   }
 
+
+  getStudentMoyenne(student){
+    const notes = Notes.find({student : student._id}).fetch();
+
+    moyenne = "N/A";
+
+    if(notes.length > 0){
+      notes.map((note, key) => {
+        if(key == 0){
+          moyenne = note.note;
+        }
+        else{
+          moyenne = parseInt(moyenne) + parseInt(note.note);
+        }
+      })
+      moyenne = (moyenne / notes.length).toFixed(1);
+
+    }
+    return (<td><span>{moyenne}</span></td>)
+  }
 
 
   render() {
@@ -76,5 +106,7 @@ export default withTracker(() => {
   return {
     classes: Classes.find({}).fetch(),
     students: Students.find({}).fetch(),
+    exercices: Exercices.find({}).fetch(),
+    notes: Notes.find({}).fetch(),
   };
 })(ClassesList);

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Classes} from "../api/classes.js";
+import {Exercices} from "../api/exercices.js";
+import {Notes} from "../api/notes.js";
 import {Students} from "../api/students.js";
 import {withTracker} from 'meteor/react-meteor-data';
 import ClassesList from './components/ClassesList';
@@ -37,27 +39,12 @@ class App extends Component {
   addExercice(e) {
     e.preventDefault();
 
-    const classeExercices = Classes.find({_id: this.exerciceClasse.value}).exercices;
-
-    console.log(classeExercices);
-    let exercices = [];
-
-    if (classeExercices) {
-      exercices = classeExercices
-    }
-
-    let newExercice = {
+    Exercices.insert({
       name: this.exerciceName.value,
+      classe: this.exerciceClasse.value,
       coefficient: this.exerciceCoefficient.value
-    };
-
-    exercices.push(newExercice);
-
-    Classes.update(this.exerciceClasse.value, {
-      $set: {
-        exercices
-      }
     })
+
   }
 
   renderClassesOptions() {
@@ -68,20 +55,26 @@ class App extends Component {
 
   renderStudentsOptions() {
     return this.props.students.map((entry, key) => (
-      <option key={key} value={entry.classe}>{entry.firstName} {entry.lastName}</option>
+      <option key={key} value={entry._id}>{entry.firstName} {entry.lastName}</option>
     ))
   }
 
   renderStudentExercicesOptions() {
     if (this.state.classes.length > 0) {
-      let studentClasse = Classes.findOne({
+
+
+      let student = Students.findOne({
         _id: this.noteStudent.value
       });
-      if (studentClasse) {
-        return studentClasse.exercices.map((exercice, key) => (
-            <option key={key} value={exercice.name}>{exercice.name}</option>
-          )
-        )
+
+      if(student){
+        const exercices  = Exercices.find({ classe : student.classe }).fetch();
+
+        if(exercices){
+          return exercices.map((exercice, key) => (
+            <option key={key} value={exercice._id}>{exercice.name}</option>
+          ));
+        }
       }
     }
   }
@@ -95,26 +88,25 @@ class App extends Component {
   addNote(e) {
     e.preventDefault();
 
-    const userExercices = Students.find({_id: this.noteStudent.value}).exercices;
+    const studentID = this.noteStudent.value;
 
-    let exercices = [];
+    const exerciceID = Exercices.findOne({_id : exerciceID});
 
-    if (userExercices) {
-      exercices = userExercices
+    const existingNote = Notes.findOne({student : studentID, exercice : exerciceID});
+
+    if(existingNote){
+      Notes.update(
+        {_id : existingNote._id},
+        {
+          note: this.noteValue.value
+      })
+    }else{
+      Notes.insert({
+        student: studentID,
+        exercice: this.noteExercice.value,
+        note: this.noteValue.value
+      })
     }
-
-    let newExercice = {
-      name: this.noteExercice.value,
-      note: this.noteValue.value
-    };
-
-    exercices.push(newExercice);
-
-    Students.update(this.noteStudent.value, {
-      $set: {
-        exercices
-      }
-    })
   }
 
   render() {
@@ -192,5 +184,7 @@ export default withTracker(() => {
   return {
     classes: Classes.find({}).fetch(),
     students: Students.find({}).fetch(),
+    exercices: Exercices.find({}).fetch(),
+    notes: Notes.find({}).fetch(),
   };
 })(App);
