@@ -4,7 +4,6 @@ import {Students} from "../api/students.js";
 import {withTracker} from 'meteor/react-meteor-data';
 import ClassesList from './components/ClassesList';
 
-
 class App extends Component {
 
   constructor(props) {
