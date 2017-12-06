@@ -1,5 +1,7 @@
 import {Classes} from "../../api/classes.js";
 import {Students} from "../../api/students.js";
+import {Exercices} from "../../api/exercices.js";
+import {Notes} from "../../api/notes.js";
 import React, { Component } from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
 
@@ -17,11 +19,13 @@ class ClassesList extends Component {
           <tr>
             <th>Étudiant</th>
             {
-              entry.exercices &&
-              entry.exercices.map((exercice, exKey) => {
+              this.props.exercices &&
+              this.props.exercices.map((exercice, exKey) => {
+                if(exercice.classe == entry._id){
                   return (
-                    <th key={exKey}>{exercice.name} ({exercice.coefficient})</th>
+                  <th key={exKey}>{exercice.name} ({exercice.coefficient})</th>
                   )
+               }
                 })
             }
           </tr>
@@ -31,22 +35,22 @@ class ClassesList extends Component {
                 (<tr key={studentKey}>
                   <td>{student.firstName} {student.lastName}</td>
                   {
-                    entry.exercices &&
-                      entry.exercices.map((exercice, exKey) => {
+                    this.props.exercices &&
+                    this.props.exercices.map((exercice, exKey) => {
+                      if(exercice.classe == entry._id){
                         return (
                           <td key={exKey}>
                             {
-                              student.exercices &&
-                                student.exercices.map((studentEx, studentExKey) => {
-                                  if(studentEx.name === exercice.name){
-                                    return (
-                                      <span key={studentExKey}>{studentEx.note}</span>
-                                    )
-                                  }
-                                })
+                              this.props.notes &&
+                              this.props.notes.map((note, noteKey) => {
+                                if(note.exercice == exercice._id && note.student == student._id){
+                                  return (<span key={noteKey}>{note.note}</span>)
+                                }
+                              })
                             }
                           </td>
                         )
+                      }
                       })
                   }
                 </tr>)
@@ -76,5 +80,7 @@ export default withTracker(() => {
   return {
     classes: Classes.find({}).fetch(),
     students: Students.find({}).fetch(),
+    exercices: Exercices.find({}).fetch(),
+    notes: Notes.find({}).fetch(),
   };
 })(ClassesList);
