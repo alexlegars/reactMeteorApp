@@ -1,5 +1,28 @@
 @import "./components";
 
+
+.custom-block{
+  margin-bottom: 50px;
+  .head-block{
+    background-color: #40C4F1;
+    color: #fff;
+    padding: 20px 30px;
+    max-width: 530px;
+    font-size: 16px;
+  }
+
+  .block-container{
+    background-color: #fff;
+    max-width: 530px;
+    padding: 20px 30px;
+  }
+}
+
+
+h2{
+  margin: 0;
+}
+
 .container {
   .left-menu{
     position: fixed;
@@ -30,6 +53,8 @@
       width: 40%;
       border-right: 1px solid #E0E0E0;
       padding-left: 50px;
+      background-color: #fff;
+      border-radius: 0;
     }
   }
 
@@ -40,10 +65,10 @@
 }
 
 button{
-  background-color: #000;
+  background-color: #A0E55B;
   color: #fff;
+  border-radius: 4px;
   text-transform: uppercase;
-  border-radius: 0;
   height: 35px;
   padding: 5px 20px;
   border: 2px solid transparent;
@@ -51,16 +76,18 @@ button{
   transition: background-color 0.7s, color 0.7s, border 0.7s;
   &:hover{
     background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
+    color: #A0E55B;
+    border: 2px solid #A0E55B;
   }
 }
 
 input, select{
-  padding: 20px 50px;
-  margin-right: 10px;
-  color: #9B9B9B;
+  border: none;
+  border-radius: 4px;
+  background-color: #F3F6F8;
+  color: #4A4A4A;
   font-size: 12px;
+  padding: 10px 20px;
 }
 
 html, body{
