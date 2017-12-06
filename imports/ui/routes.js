@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route } from 'react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 // route components
-import AppContainer from '../ui/App.js';
+import App from '../ui/App.js';
 // import ListPageContainer from '../../ui/containers/ListPageContainer.js';
 // import AuthPageSignIn from '../../ui/pages/AuthPageSignIn.js';
 // import AuthPageJoin from '../../ui/pages/AuthPageJoin.js';
@@ -11,7 +11,7 @@ const browserHistory = createBrowserHistory();
 export const renderRoutes = () => (
     <Router history={browserHistory}>
         <div>
-           <Route exact path="/" component={AppContainer}/>
+           <Route exact path="/" component={App}/>
             {/*<Route path="lists/:id" component={ListPageContainer}/>*/}
             {/*<Route path="signin" component={AuthPageSignIn}/>*/}
             {/*<Route path="join" component={AuthPageJoin}/>*/}
