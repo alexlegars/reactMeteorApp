@@ -81,9 +81,6 @@ class App extends Component {
         }
       }
     }
-    if(this.props.studentNames){
-      console.log(this.props.studentNames)
-    }
   }
 
   updateClasses(){
@@ -127,23 +124,8 @@ class App extends Component {
   }
 
   render() {
-
-    const studentsNames = this.getStudentsNames();
-
-    console.log(studentsNames);
-
     return (
-      <div className="container">
-
-        <div className="left-menu">
-
-        </div>
-
-        <div className="top-menu">
-          <input type="text" placeholder="Recherchez un étudiant"/>
-        </div>
-
-        <div className="centered-container">
+        <div>
           <ClassesList/>
 
           <div className="custom-block">
@@ -231,7 +213,6 @@ class App extends Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -1,0 +1,23 @@
+.left-menu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 150px;
+  padding: 25px;
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #E0E0E0;
+  z-index: 3;
+  .left-menu-container{
+    ul{
+      -webkit-padding-start: 0;
+      li{
+        padding: 12px;
+        color: #4A4A4A;
+        font-size: 14px;
+        cursor: pointer;
+        list-style: none;
+      }
+    }
+  }
+}

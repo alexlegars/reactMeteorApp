@@ -1,5 +1,10 @@
 @import "./components";
 
+td, th{
+  border: 1px solid #000;
+  padding: 5px;
+  text-align: center;
+}
 
 .custom-block{
   margin-bottom: 50px;
@@ -24,18 +29,6 @@ h2{
 }
 
 .container {
-  .left-menu{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 150px;
-    padding: 25px;
-    background-color: #fff;
-    height: 100%;
-    border: 1px solid #E0E0E0;
-    z-index: 3;
-  }
-
   .top-menu{
     position: fixed;
     width: calc(100% - 200px);
@@ -60,6 +53,7 @@ h2{
 
   .centered-container{
     padding-left: 300px;
+    padding-right: 100px;
     padding-top: 100px;
   }
 }

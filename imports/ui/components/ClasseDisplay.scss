@@ -1,0 +1,10 @@
+.classe-display{
+  .custom-block{
+    width: calc(50% - 50px);
+    display: inline-block;
+    float: left;
+    &:nth-child(2n + 1){
+      margin-right: 100px;
+    }
+  }
+}
