@@ -45,6 +45,9 @@ class App extends Component {
       coefficient: this.exerciceCoefficient.value
     })
 
+
+    this.exerciceName.value = "";
+    this.exerciceCoefficient.value = "";
   }
 
   renderClassesOptions() {
@@ -107,74 +110,85 @@ class App extends Component {
         note: this.noteValue.value
       })
     }
+
+    this.noteValue.value = "";
   }
 
   render() {
     return (
       <div className="container">
-        <header>
-          <h1>Liste des classes</h1>
-        </header>
-        <ClassesList/>
 
-        <h2>Ajouter un élève</h2>
-        <form className="new-student" onSubmit={this.insertStudent.bind(this)}>
-          <input type="text" ref={(firstName) => {
-            this.studentFirstName = firstName
-          }}/>
-          <input type="text" ref={(lastName) => {
-            this.studentLastName = lastName
-          }}/>
-          <select name="student-class-select" ref={(classe) => {
-            this.studentClasse = classe
-          }} id="">
-            {this.renderClassesOptions()}
-          </select>
-          <button>Envoyer</button>
-        </form>
+        <div className="left-menu">
 
-        <h2>Ajouter une classe</h2>
-        <form className="new-classe" onSubmit={this.insertClasse.bind(this)}>
-          <input type="text" ref={(name) => {
-            this.classeName = name
-          }}/>
-          <button>Envoyer</button>
-        </form>
+        </div>
 
-        <h2>Ajouter un exercice</h2>
-        <form className="new-exercice" onSubmit={this.addExercice.bind(this)}>
-          <input type="text" ref={(name) => {
-            this.exerciceName = name
-          }}/>
-          <input type="text" ref={(coefficient) => {
-            this.exerciceCoefficient = coefficient
-          }}/>
-          <select name="exercice-class-select" ref={(classe) => {
-            this.exerciceClasse = classe
-          }} id="">
-            {this.renderClassesOptions()}
-          </select>
-          <button>Envoyer</button>
-        </form>
+        <div className="top-menu">
+          <input type="text" placeholder="Rechercher un élève"/>
+        </div>
 
-        <h2>Ajouter une note</h2>
-        <form className="new-note" onSubmit={this.addNote.bind(this)}>
-          <select name="note-exercice-select" ref={(student) => {
-            this.noteStudent = student
-          }} id="" onChange={() => this.updateClasses()}>
-            <option role="placeholder" value="">Sélectionnez un élève</option>
-            {this.renderStudentsOptions()}
-          </select>
-          <select name="note-exercice-select" ref={(exercice) => {
-            this.noteExercice = exercice
-          }} id="">
-            {this.renderStudentExercicesOptions()}
-          </select>
-          <input type="text" placeholder="Note" ref={(note) => {
-            this.noteValue = note
-          }}/>
-          <button>Envoyer</button>
-        </form>
+        <div className="centered-container">
+          <ClassesList/>
+
+          <h2>Ajouter un élève</h2>
+          <form className="new-student" onSubmit={this.insertStudent.bind(this)}>
+            <input type="text" placeholder="Prénom" ref={(firstName) => {
+              this.studentFirstName = firstName
+            }}/>
+            <input type="text" placeholder="Nom" ref={(lastName) => {
+              this.studentLastName = lastName
+            }}/>
+            <select name="student-class-select" ref={(classe) => {
+              this.studentClasse = classe
+            }} id="">
+              {this.renderClassesOptions()}
+            </select>
+            <button>Envoyer</button>
+          </form>
+
+          <h2>Ajouter une classe</h2>
+          <form className="new-classe" onSubmit={this.insertClasse.bind(this)}>
+            <input type="text" placeholder="Nom de la classe" ref={(name) => {
+              this.classeName = name
+            }}/>
+            <button>Envoyer</button>
+          </form>
+
+          <h2>Ajouter un exercice</h2>
+          <form className="new-exercice" onSubmit={this.addExercice.bind(this)}>
+            <input type="text" placeholder="Nom de l'exercice" ref={(name) => {
+              this.exerciceName = name
+            }}/>
+            <input type="text" placeholder="Coefficient" ref={(coefficient) => {
+              this.exerciceCoefficient = coefficient
+            }}/>
+            <select name="exercice-class-select" ref={(classe) => {
+              this.exerciceClasse = classe
+            }} id="">
+              {this.renderClassesOptions()}
+            </select>
+            <button>Envoyer</button>
+          </form>
+
+          <h2>Ajouter une note</h2>
+          <form className="new-note" onSubmit={this.addNote.bind(this)}>
+            <select name="note-exercice-select" ref={(student) => {
+              this.noteStudent = student
+            }} id="" onChange={() => this.updateClasses()}>
+              <option role="placeholder" value="">Sélectionnez un élève</option>
+              {this.renderStudentsOptions()}
+            </select>
+            <select name="note-exercice-select" ref={(exercice) => {
+              this.noteExercice = exercice
+            }} id="">
+              <option role="placeholder" value="">Sélectionnez un exercice</option>
+              {this.renderStudentExercicesOptions()}
+            </select>
+            <input type="text" placeholder="Note" ref={(note) => {
+              this.noteValue = note
+            }}/>
+            <button>Envoyer</button>
+          </form>
+        </div>
       </div>
     );
   }

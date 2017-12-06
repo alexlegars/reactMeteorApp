@@ -73,18 +73,21 @@ class ClassesList extends Component {
   getStudentMoyenne(student){
     const notes = Notes.find({student : student._id}).fetch();
 
-    moyenne = "N/A";
+    let moyenne = "N/A";
+    let coefficient = 0;
 
     if(notes.length > 0){
       notes.map((note, key) => {
+        let exerciceCoefficient = Exercices.findOne({ _id : note.exercice }).coefficient;
         if(key == 0){
-          moyenne = note.note;
+          moyenne = parseInt(note.note) * parseInt(exerciceCoefficient);
         }
         else{
-          moyenne = parseInt(moyenne) + parseInt(note.note);
+          moyenne = parseInt(moyenne) + (parseInt(note.note) * parseInt(exerciceCoefficient));
         }
+        coefficient = coefficient + parseInt(exerciceCoefficient);
       })
-      moyenne = (moyenne / notes.length).toFixed(1);
+      moyenne = (moyenne / (coefficient)).toFixed(1);
 
     }
     return (<td><span>{moyenne}</span></td>)

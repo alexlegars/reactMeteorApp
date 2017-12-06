@@ -1,5 +1,68 @@
-@import "components/ClassesList";
+@import "./components";
 
 .container {
+  .left-menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    padding: 25px;
+    background-color: #fff;
+    height: 100%;
+    border: 1px solid #E0E0E0;
+    z-index: 3;
+  }
 
+  .top-menu{
+    position: fixed;
+    width: calc(100% - 200px);
+    right: 0;
+    top: 0;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    input{
+      height: calc(100% - 1px);
+      padding: 0;
+      border: 0px;
+      position: relative;
+      left: 5px;
+      width: 40%;
+      border-right: 1px solid #E0E0E0;
+      padding-left: 50px;
+    }
+  }
+
+  .centered-container{
+    padding-left: 300px;
+    padding-top: 100px;
+  }
+}
+
+button{
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+  height: 35px;
+  padding: 5px 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.7s, color 0.7s, border 0.7s;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+}
+
+input, select{
+  padding: 20px 50px;
+  margin-right: 10px;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+html, body{
+  background-color: #F0F2F5;
 }
