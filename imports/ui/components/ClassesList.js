@@ -28,6 +28,7 @@ class ClassesList extends Component {
                }
                 })
             }
+            <th>Moyenne</th>
           </tr>
           {
             this.props.students.map((student, studentKey) => {
@@ -53,6 +54,11 @@ class ClassesList extends Component {
                       }
                       })
                   }
+
+                  {
+                    this.getStudentMoyenne(student)
+                  }
+
                 </tr>)
                 : null);
             })
@@ -63,6 +69,26 @@ class ClassesList extends Component {
       ))
   }
 
+
+  getStudentMoyenne(student){
+    const notes = Notes.find({student : student._id}).fetch();
+
+    moyenne = "N/A";
+
+    if(notes.length > 0){
+      notes.map((note, key) => {
+        if(key == 0){
+          moyenne = note.note;
+        }
+        else{
+          moyenne = parseInt(moyenne) + parseInt(note.note);
+        }
+      })
+      moyenne = (moyenne / notes.length).toFixed(1);
+
+    }
+    return (<td><span>{moyenne}</span></td>)
+  }
 
 
   render() {

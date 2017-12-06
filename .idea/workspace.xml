@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b49da3d5-9502-424c-ac07-9871faa82243" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/ClassesList.js" afterPath="$PROJECT_DIR$/imports/ui/components/ClassesList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+            <state relative-caret-position="1566">
+              <caret line="99" column="33" lean-forward="true" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="147">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassesList.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassesList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/ClassesList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-424">
-              <caret line="45" column="97" lean-forward="false" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+            <state relative-caret-position="277">
+              <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -149,9 +149,9 @@
         <option value="$PROJECT_DIR$/imports/api/exercice.js" />
         <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/imports/api/exercices.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/ClassesList.js" />
-        <option value="$PROJECT_DIR$/imports/ui/App.js" />
         <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/imports/ui/App.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/ClassesList.js" />
       </list>
     </option>
   </component>
@@ -263,12 +263,12 @@
       <updated>1512397234391</updated>
       <workItem from="1512397235781" duration="8403000" />
       <workItem from="1512479408462" duration="11374000" />
-      <workItem from="1512492620293" duration="8163000" />
+      <workItem from="1512492620293" duration="9888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27940000" />
+    <option name="totallyTimeSpent" value="29665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="6" />
@@ -541,16 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/ClassesList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424">
-          <caret line="45" column="97" lean-forward="false" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -559,21 +549,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+        <state relative-caret-position="1566">
+          <caret line="99" column="33" lean-forward="true" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.css">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/ClassesList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="277">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
